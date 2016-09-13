@@ -7,3 +7,4 @@ mod 'users',
 
 mod 'ntp_wrapper',
 :git => git@github.com:gutimob26/ntp_wrapper.git,
+:commit => '2ada28d392380172b412ab91f92f35442c5b739b'
