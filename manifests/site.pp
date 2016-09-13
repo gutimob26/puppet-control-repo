@@ -37,3 +37,12 @@ node 'jaime.puppetlabs.vm' {
    node /\.puppetlabs\.vm$/ {
      include  users
    }
+   
+   class { 'ntp_wrapper':
+   server1 => 'time.apple.com',
+   server2 => 'pool.ntp.org',
+     }
+   }
+   
+   
+   class { 'ntp_wrapper': 
