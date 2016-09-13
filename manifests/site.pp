@@ -39,8 +39,7 @@ node 'jaime.puppetlabs.vm' {
    }
    
    class { 'ntp_wrapper':
-   server1 => 'time.apple.com',
-   server2 => 'pool.ntp.org',
+       server => ['0.pool.ntp.org' , '1.pool.ntp.org']
      }
    }
    
