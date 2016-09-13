@@ -1,10 +1,6 @@
 forge "http://force.puppetlabs.com"
 
-mod "puppetlabs/sdlib", '4.12.0'
-
-mod 'users',
-:git => 'git@github.com:gutimob26/users.git'
-:branch => 'master'
+mod "puppetlabs/stdlib", '4.12.0'
 
 mod 'ntp_wrapper',
 git => 'git@github.com:gutimob26/ntp_wrapper.git'
