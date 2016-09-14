@@ -5,12 +5,11 @@ class profile::base {
     comment  => 'root',
     gid      => '0',
     home     => '/root',
-    password => '$1$Tb9hAyyD$iWQhIMeYbBg7ES6vINn6H.',
     shell    => '/bin/bash',
     uid      => '0',
   }
 
-  user { 'laura':
+  user { 'jaime':
     ensure     => present,
     managehome => true,
   }
