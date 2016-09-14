@@ -1,7 +1,7 @@
 # datacenter.rb
 Facter.add('datacenter') do
   setcode do
-    hostnae = Facter.value(:hostname)
+    hostname = Facter.value(:hostname)
     case hostname
     when /den/
        'denver'
