@@ -9,3 +9,4 @@ mod 'users',
 
 mod 'ntp_wrapper',
   :git => 'git@github.com:gutimob26/ntp-wrappers.git',
+  :branch => production
