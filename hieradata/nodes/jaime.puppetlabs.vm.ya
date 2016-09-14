@@ -1,3 +1,3 @@
 ---
 ntp::servers:
-- 'times.nis.gov'
+- 'times.nist.gov'
