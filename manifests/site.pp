@@ -44,4 +44,4 @@ node 'jaime.puppetlabs.vm' {
    }
    
    
-   class { 'ntp_wrapper': 
+   
