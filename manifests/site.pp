@@ -1,4 +1,3 @@
-
 ## site.pp ##
 
 # This file (/etc/puppetlabs/puppet/manifests/site.pp) is the main entry point
@@ -25,20 +24,14 @@ File { backup => false }
 # will be included in every node's catalog, *in addition* to any classes
 # specified in the console for that node.
 
+node 'jaime.puppetlabs.vm' {
+  include users
+}
+
 node default {
   # This is where you can declare classes for all nodes.
   # Example:
   #   class { 'my_class': }
 }
-
-     node /\.puppetlabs\.vm$/ {
-     include  users
-   }
-   
-   class { 'ntp_wrapper':
-       server => ['0.pool.ntp.org' , '1.pool.ntp.org']
-   }
-   
-   
    
    
