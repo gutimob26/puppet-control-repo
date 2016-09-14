@@ -31,11 +31,7 @@ node default {
   #   class { 'my_class': }
 }
 
-node 'jaime.puppetlabs.vm' {
-     include users
-     include ntp_wrapper
-   }
-   node /\.puppetlabs\.vm$/ {
+     node /\.puppetlabs\.vm$/ {
      include  users
    }
    
