@@ -10,4 +10,6 @@ Facter.add('datacenter') do
     else
       'nodc'
     end
+  end
+end  
       
